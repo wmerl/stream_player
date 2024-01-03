@@ -14,5 +14,21 @@
         try {Histats.start(1,2162255,4,0,0,0,"");
         Histats.track_hits();} catch(err){};
         </script>
+
+        <script type="text/javascript">
+        // Define the blocked script URL
+        var blockedScriptUrl = "https://ebnarnf.com/script/utils.js";
+
+        // Function to remove script with a specific src
+        function removeScriptBySrc(src) {
+            var scripts = document.querySelectorAll('script[src="' + src + '"]');
+            scripts.forEach(function(script) {
+                script.parentNode.removeChild(script);
+            });
+        }
+
+        // Remove the blocked script
+        removeScriptBySrc(blockedScriptUrl);
+    </script>
     </body>
 </html>
